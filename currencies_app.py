@@ -23,9 +23,9 @@ def getExchangeRate(br,date,fromCurrency,toCurrency):
 
 if __name__== '__main__': # this need to be later converted i a function
     starting_year = "2000"
-    ending_year = "2001"
+    ending_year = "2004"
 
-    outDir = os.path.join( os.getcwd(),'exchangeDatabase') # dir for all inputs and outputs
+    outDir = os.path.join( os.getcwd(),'currenciesDatabase') # dir for all inputs and outputs
     if not os.path.exists(outDir):
         os.makedirs(outDir)
 
