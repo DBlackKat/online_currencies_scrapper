@@ -5,6 +5,12 @@ Get all the history exchange rates of MYR to TWD
     all scrap code are set to get the exchange rate from malaysia ringgit 
     to taiwan dollar conversion rate
     
+    Library Required:
+    Mechanize
+    BeautifulSoup
+    Numpy
+    Pandas
+
     available scrap source:
         currencies_app.py:
             http://currencies.apps.grandtrunk.net/
