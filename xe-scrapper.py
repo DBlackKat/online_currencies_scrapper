@@ -25,7 +25,7 @@ def getExchangeRate(br,date,fromCurrency,toCurrency):
 
 if __name__== '__main__': # this need to be later converted i a function
     starting_year = "2000"
-    ending_year = "2000"
+    ending_year = "2003"
 
     outDir = os.path.join( os.getcwd(),'xeDatabase') # dir for all inputs and outputs
     if not os.path.exists(outDir):
@@ -33,7 +33,7 @@ if __name__== '__main__': # this need to be later converted i a function
 
     br = initMechanize()
     start = datetime.datetime.strptime("01-01-"+starting_year,"%d-%m-%Y")
-    end = datetime.datetime.strptime("03-01-"+ending_year,"%d-%m-%Y")
+    end = datetime.datetime.strptime("01-01-"+ending_year,"%d-%m-%Y")
     date_generated = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
 
     exchange_dict = dict()
@@ -48,6 +48,7 @@ if __name__== '__main__': # this need to be later converted i a function
         else:
             exchange_dict["date"] = [date.strftime("%Y-%m-%d")]
             exchange_dict["rates"] = [rate]
-        time.sleep(1)
+        time.sleep(5)
         sys.stdout.write( '\n' )
     df = pd.DataFrame(data=exchange_dict,index = index)
+    df.to_pickle(outDir+"/"+starting_year+"-"+ending_year+".p")
