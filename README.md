@@ -1,9 +1,9 @@
 # online_currencies_scrapper
-Get all the history exchange rates of MYR to TWD
+Get all the history exchange rates of MYR ---> TWD
 
     please read through the python code for your need
-    all scrap code are set to get the exchange rate from malaysia ringgit 
-    to taiwan dollar conversion rate
+    all scrap code are set to get the EXCHANGE RATE from malaysia RINGGIT 
+    to TAIWAN DOLLAR conversion rate
     
     Library Required:
     Mechanize
