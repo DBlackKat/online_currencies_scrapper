@@ -22,8 +22,10 @@ def getExchangeRate(br,date,fromCurrency,toCurrency):
     return float(rate)
 
 if __name__== '__main__': # this need to be later converted i a function
-    starting_year = "2000"
-    ending_year = "2004"
+    starting_year = raw_input("Input the starting year ")
+    ending_year = raw_input("Input the ending year ")
+    sys.stdout.write("\nThe starting year {}\n".format(starting_year))
+    sys.stdout.write("\n The ending year {}\n".format(ending_year))
 
     outDir = os.path.join( os.getcwd(),'currenciesDatabase') # dir for all inputs and outputs
     if not os.path.exists(outDir):
