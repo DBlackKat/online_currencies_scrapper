@@ -8,5 +8,7 @@ Get all the history exchange rates of MYR to TWD
     available scrap source:
         currencies_app.py:
             http://currencies.apps.grandtrunk.net/
+        xe_scrapper.py:
+            scrap xe website currecies
 
 
