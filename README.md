@@ -22,3 +22,8 @@ Get all the history exchange rates of MYR to TWD
         you will be prompted to input the year you wanted to scrap
         Note: if you want to get year 2002 then you should input 2002 and 2003
         
+    Issues to resolve:
+        return null if the input year is not available
+        currrenly use pickle for data dumping which isn't effective at all, should consider changing to json  
+        convert the main function to a define function
+        
